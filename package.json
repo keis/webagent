@@ -1,0 +1,32 @@
+{
+  "name": "webagent",
+  "version": "0.0.0",
+  "description": "your personal agent to the world wide web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:keis/webagent.git"
+  },
+  "keywords": [
+    "agent",
+    "cli",
+    "web"
+  ],
+  "author": "David Keijser <keijser@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keis/webagent/issues"
+  },
+  "homepage": "https://github.com/keis/webagent",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "component-find": "^1.0.0",
+    "inquirer": "^0.8.5",
+    "meow": "^3.3.0",
+    "superagent": "^1.2.0",
+    "xdg-basedir": "^2.0.0"
+  }
+}
