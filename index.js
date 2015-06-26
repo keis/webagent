@@ -22,16 +22,19 @@ function main() {
     help: 'Usage: webagent discover <url>'
   })
 
-  if (cli.input[0] == 'discover') {
-    return discover({url: cli.input[1]}, function (err, data) {
+  switch (cli.input[0]) {
+  case 'discover':
+    discover({url: cli.input[1]}, function (err, data) {
       if (err) {
         return console.error(err)
       }
       console.log(JSON.stringify(data, null, 2))
     })
+    break
+  default:
+    console.error("What?")
+    break
   }
-
-  console.error("What?")
 }
 
 // Do stuff if this is the main module.
